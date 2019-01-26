@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar color="Primary">
+    <ion-title>
+      Edit Page
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <ion-item>
+          <ion-input [(ngModel)]="todo" placeholder="{{todo}}" type="text"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <button full ion-button color="secondary" (click)="onEditSubmit()">Save</button>
+
+</ion-content>
